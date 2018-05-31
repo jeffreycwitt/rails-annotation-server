@@ -11,11 +11,10 @@ RUN bundle install
 # Now add the rest of the files
 COPY . /rails-annotation-server
 
-#Set Environemnet Variable
-ENV RACK_ENV=development
-RUN bin/rails db:migrate RAILS_ENV=production
-RUN bin/rails db:migrate RAILS_ENV=development
+# Migrate Db
+RUN bin/rails db:migrate
+
 # Start server
 ENV PORT 3000
 EXPOSE 3000
-CMD ["rails", "server"]
+#CMD ["rails", "server"]
