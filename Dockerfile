@@ -13,7 +13,7 @@ COPY . /rails-annotation-server
 
 #Set Environemnet Variable
 ENV RACK_ENV=development
-
+RUN bin/rails db:migrate
 # Start server
 ENV PORT 3000
 EXPOSE 3000
