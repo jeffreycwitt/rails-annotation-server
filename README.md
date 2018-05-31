@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The docker file sets the default RACK_ENV=development
 
-Things you may want to cover:
+To run in production, rails requires the "SECRET_KEY_BASE" to be set in the environment.
 
-* Ruby version
+You can generate this with `rails secret`
 
-* System dependencies
+Then before running docker compose, set your environment variables
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+export SECRET_KEY_BASE=<secret_key_base_value>
+export RACK_ENV=production

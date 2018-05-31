@@ -67,8 +67,6 @@ GEM
     erubi (1.7.1)
     execjs (2.7.0)
     ffi (1.9.23)
-    font-awesome-rails (4.7.0.4)
-      railties (>= 3.2, < 6.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.0.1)
@@ -76,10 +74,6 @@ GEM
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
-    jquery-rails (4.3.3)
-      rails-dom-testing (>= 1, < 3)
-      railties (>= 4.2.0)
-      thor (>= 0.14, < 2.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -89,24 +83,14 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
-    material_icons (2.2.1)
-      railties (>= 3.2)
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
-    mirador_rails (0.8.0)
-      font-awesome-rails
-      jquery-rails
-      material_icons
-      openseadragon
-      tinymce-rails
     multi_json (1.13.1)
     nio4r (2.3.1)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
-    openseadragon (0.4.0)
-      rails (> 3.2.0)
     public_suffix (3.0.2)
     puma (3.11.4)
     rack (2.0.5)
@@ -172,8 +156,6 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
-    tinymce-rails (4.7.13)
-      railties (>= 3.1.1)
     turbolinks (5.1.1)
       turbolinks-source (~> 5.1)
     turbolinks-source (5.1.0)
@@ -202,7 +184,6 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-  mirador_rails
   puma (~> 3.7)
   rack-cors
   rails (~> 5.1.4)
