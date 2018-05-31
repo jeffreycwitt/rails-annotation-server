@@ -12,10 +12,10 @@ RUN bundle install
 COPY . /rails-annotation-server
 
 #Set Environemnet Variable
-ENV RACK_ENV=development
+#ENV RACK_ENV=development
 
 # Run dbmigrate
-RUN bin/rails db:migrate
+RUN rake db:create db:migrate
 # Start server
 ENV PORT 3000
 EXPOSE 3000
