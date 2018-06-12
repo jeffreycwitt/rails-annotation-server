@@ -12,7 +12,7 @@ RUN bundle install
 COPY . /rails-annotation-server
 
 # Migrate Db
-RUN bin/rails db:migrate
+#RUN bin/rails db:migrate
 
 # Start server
 ENV PORT 3000
